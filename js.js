@@ -1,13 +1,15 @@
 function click1() {
     let f1 = document.getElementsByName("field1");
     let f2 = document.getElementsByName("field2");
-    let r = document.getElementById("result");
-    return f1[0].value*f2[0].value;
-    return false;
+    let r = f1[0].value*f2[0].value;
+    if(!r[0]) {
+      return "Error";
+    }
+    return r;
 }
 
 function onClick() {
-    alert(click1() + " ₽");
+    alert(click1());
   }
   
   window.addEventListener('DOMContentLoaded', function (event) {

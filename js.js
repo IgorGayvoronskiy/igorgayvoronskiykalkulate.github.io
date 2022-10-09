@@ -1,11 +1,12 @@
 function click1() {
     let f1 = document.getElementsByName("field1");
     let f2 = document.getElementsByName("field2");
-    let r = f1[0].value*f2[0].value;
-    if(!r[0]) {
+    if(f1[0].value*f2[0].value) {
+      return f1[0].value*f2[0].value;
+    }
+    else{
       return "Error";
     }
-    return r;
 }
 
 function onClick() {
